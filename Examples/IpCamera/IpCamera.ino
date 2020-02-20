@@ -1,3 +1,16 @@
+/*
+  Project IpCamera, 2020.02.20
+
+  Hardware:
+ - Arduino Uno board
+ - ARSHXIP board
+ - ArduCam mini
+
+  This IpCamera acts as a web server. The camera MJPEG stream can be viewed from a browser.
+
+  This sketch is similar with the one using ARSHXNS, the difference being that it uses one socket instead two and less RAM memory.
+*/
+
 #ifdef F_CPU
 #undef F_CPU
   #define F_CPU 16000000UL
