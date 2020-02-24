@@ -1,10 +1,10 @@
 object frmMain: TfrmMain
   Left = 74
-  Height = 440
+  Height = 467
   Top = 107
   Width = 1615
   Caption = 'Elsofgel SEI Register Monitor Inteface'
-  ClientHeight = 440
+  ClientHeight = 467
   ClientWidth = 1615
   OnCreate = FormCreate
   LCLVersion = '1.8.4.0'
@@ -61,7 +61,7 @@ object frmMain: TfrmMain
   end
   object sgSr: TStringGrid
     Left = 0
-    Height = 348
+    Height = 376
     Top = 88
     Width = 1720
     AutoEdit = False

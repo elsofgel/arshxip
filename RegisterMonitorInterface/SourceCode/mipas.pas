@@ -120,7 +120,7 @@ begin
  ui32FreeSpaceP1 := ui32FreeSpaceP1 + 5;
 end;
 
-procedure prCrPHYCS;
+procedure prCrPHYC;
 begin
    frmMain.sgCr.Cells[7, 1] := ByteToHex(ui8ArSerRxBff[(ui32SerRxTail + 2) and $FFFF]) + ' ' + ByteToHex(ui8ArSerRxBff[(ui32SerRxTail + 1) and $FFFF]);
    frmMain.sgCr.Cells[8, 1] := ByteToHex(ui8ArSerRxBff[(ui32SerRxTail + 4) and $FFFF]) + ' ' + ByteToHex(ui8ArSerRxBff[(ui32SerRxTail + 3) and $FFFF]);
@@ -130,7 +130,7 @@ end;
 
 procedure prCrPQIP;
 begin
-  frmMain.sgCr.Cells[9, 1] := IntToStr(ui8ArSerRxBff[(ui32SerRxTail + 1) and $FFFF]) + '.' + IntToStr(ui8ArSerRxBff[(ui32SerRxTail + 2) and $FFFF]) + '.' + IntToStr(ui8ArSerRxBff[(ui32SerRxTail + 3) and $FFFF]) + '.' + IntToStr(ui8ArSerRxBff[(ui32SerRxTail + 4) and $FFFF]);
+  frmMain.sgCr.Cells[9, 1] := IntToStr(ui8ArSerRxBff[(ui32SerRxTail + 2) and $FFFF]) + '.' + IntToStr(ui8ArSerRxBff[(ui32SerRxTail + 1) and $FFFF]) + '.' + IntToStr(ui8ArSerRxBff[(ui32SerRxTail + 4) and $FFFF]) + '.' + IntToStr(ui8ArSerRxBff[(ui32SerRxTail + 3) and $FFFF]);
   ui32SerRxTail := (ui32SerRxTail + 5) and $FFFF;
   ui32FreeSpaceP1 := ui32FreeSpaceP1 + 5;
 end;
@@ -608,7 +608,7 @@ begin
     clColumn.Font.Name := 'Arial';
     clColumn.Font.Size := 9;
     clColumn.Title.Alignment := taCenter;
-    clColumn.Title.Caption := 'PHYCS';
+    clColumn.Title.Caption := 'PHYC';
 
     clColumn := Columns.Add;
     clColumn.Width := 45;
@@ -935,7 +935,7 @@ end;
   ptrArCr[1] := @prCrHMA; // 2
   ptrArCr[2] := @prCrHIPA_HSM_GIPA; // 4
   ptrArCr[3] := @prCrIF; // 8
-  ptrArCr[4] := @prCrPHYCS; // 10
+  ptrArCr[4] := @prCrPHYC; // 10
   ptrArCr[5] := @prCrPQIP; // 12
   ptrArCr[6] := @prCrDHCS; // 14
   ptrArCr[7] := @prCrDHSRV; // 16

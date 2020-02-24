@@ -12,7 +12,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="136"/>
+        <UsageCount Value="137"/>
       </Unit0>
       <Unit1>
         <Filename Value="mipas.pas"/>
@@ -21,9 +21,9 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <IsVisibleTab Value="True"/>
-        <TopLine Value="955"/>
+        <TopLine Value="940"/>
         <CursorPos X="45" Y="975"/>
-        <UsageCount Value="136"/>
+        <UsageCount Value="137"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit1>
@@ -36,7 +36,7 @@
         <UsageCount Value="5"/>
       </Unit2>
     </Units>
-    <JumpHistory Count="14" HistoryIndex="13">
+    <JumpHistory Count="20" HistoryIndex="19">
       <Position1>
         <Filename Value="mipas.pas"/>
         <Caret Line="119" Column="43" TopLine="96"/>
@@ -93,6 +93,29 @@
         <Filename Value="mipas.pas"/>
         <Caret Line="974" Column="44" TopLine="940"/>
       </Position14>
+      <Position15>
+        <Filename Value="mipas.pas"/>
+        <Caret Line="957" Column="38" TopLine="955"/>
+      </Position15>
+      <Position16>
+        <Filename Value="mipas.pas"/>
+        <Caret Line="123" Column="19" TopLine="102"/>
+      </Position16>
+      <Position17>
+        <Filename Value="mipas.pas"/>
+        <Caret Line="611" Column="36" TopLine="577"/>
+      </Position17>
+      <Position18>
+        <Filename Value="mipas.pas"/>
+        <Caret Line="921" Column="44" TopLine="904"/>
+      </Position18>
+      <Position19>
+        <Filename Value="mipas.pas"/>
+        <Caret Line="939" Column="26" TopLine="905"/>
+      </Position19>
+      <Position20>
+        <Filename Value="mipas.pas"/>
+      </Position20>
     </JumpHistory>
   </ProjectSession>
 </CONFIG>
